@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;}
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>위치는 부산의 중심! 실력은 부산의 최고!</h1><br>
+			<h2>부산의 대표 전문대학 동의과학대학교</h2>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="bgdit1.png">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">대학소개</a></li>
+				<li><a href="#movie" data-rel="dialog">입학안내</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">학과안내</a></li>
+				<li><a href="#gallery">학교사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>COPYRIGHT 2015 © DONG-EUI INSTITUTE OF TECHNOLOGY. ALL RIGHTS RESERVED.</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>대학 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="word0101.png">
+				</div>
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>설립이념(건학정신)</h3>
+					<p>본 대학은 동의학원 설립자이며 이사장인 故 석당 김임식 박사의 학원설립 이념인 '동의지천(東義知天)'에 바탕을 두고 있다. '동의(東義)'와 '지천(知天)'은 동의과학대학교가 지향해야 할 대명제이자 교육 지표로서 동의학원의 설립이념이자 건학정신이라고 할 수 있다.<br><br>
+					동의는 바로 '새로운 도덕관, 바르고 참된 뜻을 펼치는 학문하는 곳' 이요, 지천이란 '군자'가 걸어야 할 지상의 목표이다.<br><br>
+					군자불가이불수신 사수신 불가이불사친 사사친 불가이부지인 사지인 불가이부지천<br>
+	(君子不可以不修身 思修身 不可以不事親 思事親 不可以不知人 思知人 不可以不知天)』<br>
+	- 중용(中庸) 제4편(第四篇) 성론(誠論)에서<br><br>
+동의과학대학교의 건학정신은 우주 만물의 근본으로서의 진리이며 예의 근원으로서의 하늘을 알며, 지인(知人), 사친(事親), 수신(修身)을 통해 인간 본래의 품성을 다듬고 자연의 이치와 조화를 이룸으로써 이성과 도덕성을 겸비한 인격체를 완성하고자 한다. 즉 성실한 마음으로 주체성을 자각하고, 여기에서 솟아나는 의롭고 헌신적인 사회봉사의 자세 및 능력 계발을 지향하며, 이를 바탕으로 자아를 실현하고 우주 만물의 근본 이치를 터득하여 국가와 인류 사회의 발전에 기여하는 창조적인 동의인을 형성하는 데 목적이 있다.<br><br><br>
+- 동의학원 설립자 '석당 김임식 박사'님의 설립이념</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>교육목표</h3>
+					<p>대한민국 교육의 근본이념에 입각하여 국가 산업 발전에 필요한 전문지식과 이론을 교수 연구하고 재능을 연마하여 국가 발전에 필요한 전문 기술인을 양성한다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>교육방식 </h3>
+					<ul style="list-style-type:square">
+					 <li>전문 기술인으로서 갖추어야 할 교양과 전문기술을 배양하여 창의적인 직업기술인 양성(창의적인 기술인 양성)</li>
+					 <li>산학협동교육의 강화로 산업사회에 이바지하는 교육과정의 개발(산업사회의 협동인 양성)</li>
+					 <li>발전하는 산업사회의 기술개발에 기여할 수 있는 자질과 능력 배양(성실하고 유능한 직업 기술인 배양)</li>
+					 <li>면학분위기 조성을 위한 쾌적한 교육환경 조성(정서 순화)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>COPYRIGHT 2015 © DONG-EUI INSTITUTE OF TECHNOLOGY. ALL RIGHTS RESERVED.</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>동의과학대학교 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">동의과학대학교 홍보 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="http://www.youtube.com/embed/YckdJI3bPTw"></iframe></li><br/>
+			<div class="ui-bar ui-bar-e">2021학년도 동의과학대학교 입학 안내 | 캠퍼스 라이프</div><br/>
+			<li><video controls width="100%" preload="metadata">
+				<source src="dit_video.mp4" type="video/mp4">
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>노래</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">태연 - 사계(Four Seasons)</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="태연 - 사계(Four Seasons).mp3" type="audio/mp3">
+			</audio>
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>동의과학대학교 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="1-1.jpg" rel="external"><img src="1-1.jpg" /></a></li>
+				<li><a href="1-2.jpg" rel="external"><img src="1-2.jpg" /></a></li>
+				<li><a href="1-3.jpg" rel="external"><img src="1-3.jpg" /></a></li>
+				<li><a href="1-4.jpg" rel="external"><img src="1-4.jpg" /></a></li>
+				<li><a href="1-5.jpg" rel="external"><img src="1-5.jpg" /></a></li>
+				<li><a href="1-6.jpg" rel="external"><img src="1-6.jpg" /></a></li>
+				<li><a href="1-7.jpg" rel="external"><img src="1-7.jpg" /></a></li>
+				<li><a href="1-8.jpg" rel="external"><img src="1-8.jpg" /></a></li>
+				<li><a href="1-9.jpg" rel="external"><img src="1-9.jpg" /></a></li>
+				<li><a href="1-10.jpg" rel="external"><img src="1-10.jpg" /></a></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>COPYRIGHT 2015 © DONG-EUI INSTITUTE OF TECHNOLOGY. ALL RIGHTS RESERVED.</h1>
+		</div>
+	</div>
+</div>
+</body>
+</html>
